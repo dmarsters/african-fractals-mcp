@@ -1,0 +1,768 @@
+# African Fractals Visual Vocabulary
+# Based on Ron Eglash's ethnomathematical research
+# 
+# This olog encodes fractal design traditions from across Africa,
+# preserving cultural specificity while enabling categorical composition.
+# Each tradition represents distinct mathematical sophistication developed
+# independently - these are NOT variations of a single "African style"
+# but separate geometric knowledge systems.
+
+meta:
+  name: african-fractals
+  version: "1.0.0"
+  domain: ethnomathematics
+  attribution:
+    primary_source: "African Fractals: Modern Computing and Indigenous Design"
+    author: "Ron Eglash"
+    year: 1999
+    note: >
+      This vocabulary draws from Eglash's documentation of mathematical
+      traditions. Users should cite specific cultural origins when generating
+      imagery rather than generic "African patterns."
+  
+  educational_resources:
+    csdt_main: "https://csdt.org/"
+    african_fractals_hub: "https://csdt.org/culture/africanfractals/index.html"
+    ted_talk: "https://www.ted.com/talks/ron_eglash_the_fractals_at_the_heart_of_african_designs"
+    philosophy: >
+      CSDT creates bidirectional value: students learn mathematics through 
+      cultural heritage, and cultural knowledge gains visibility through 
+      math education. This brick should function as a gateway to deeper 
+      engagement with these tools, not a substitute for them.
+    usage_principle: >
+      When generating imagery, include links to relevant CSDT interactive 
+      tools so users can explore the actual mathematics, not just the aesthetics.
+  
+  core_insight: >
+    African fractal designs encode intentional mathematical knowledge -
+    recursion, scaling algorithms, and self-similarity developed for
+    cosmological, practical, and social purposes. The patterns are not
+    decorative accidents but compressed computational procedures.
+
+# =============================================================================
+# TYPES: The categorical objects
+# =============================================================================
+
+types:
+
+  # ---------------------------------------------------------------------------
+  # RECURSION MECHANICS
+  # How self-similarity is constructed
+  # ---------------------------------------------------------------------------
+  
+  recursion_type:
+    description: "Fundamental method of generating self-similarity"
+    values:
+      
+      self_similar_exact:
+        description: "Exact repetition at different scales"
+        visual_signature: "Same shape appears smaller within itself"
+        mathematical_property: "Constant scaling ratio throughout"
+        example_traditions: ["ethiopian_crosses", "akan_goldweights"]
+        
+      self_affine:
+        description: "Proportions shift systematically with scale"
+        visual_signature: "Shape stretches or compresses at each level"
+        mathematical_property: "Different scaling ratios per axis"
+        example_traditions: ["fulani_textiles", "mangbetu_design"]
+        
+      branching:
+        description: "Tree-like subdivision from trunk to branches"
+        visual_signature: "Hierarchical splitting, organic flow"
+        mathematical_property: "Bifurcation ratios, angle preservation"
+        example_traditions: ["hairstyling_traditions", "river_delta_planning"]
+        
+      spiral_logarithmic:
+        description: "Growth following logarithmic spiral"
+        visual_signature: "Continuous curve with self-similar turns"
+        mathematical_property: "Constant angle between radius and tangent"
+        example_traditions: ["shell_motifs", "circular_settlements"]
+        
+      cellular_nesting:
+        description: "Enclosures within enclosures"
+        visual_signature: "Bounded regions containing smaller bounded regions"
+        mathematical_property: "Recursive containment, boundary preservation"
+        example_traditions: ["ba_ila_settlements", "dogon_architecture"]
+        
+      iterative_elaboration:
+        description: "Edges or boundaries become increasingly complex"
+        visual_signature: "Simple shape gains detail at each iteration"
+        mathematical_property: "Koch-like edge replacement rules"
+        example_traditions: ["ethiopian_crosses", "geometric_scarification"]
+
+  # ---------------------------------------------------------------------------
+  # CULTURAL-GEOMETRIC TRADITIONS
+  # Specific knowledge systems with documented rules
+  # ---------------------------------------------------------------------------
+  
+  tradition:
+    description: "Culturally-specific fractal knowledge systems"
+    note: >
+      Each tradition has its own mathematical rules, cosmological meanings,
+      and visual vocabulary. They should not be mixed arbitrarily.
+    
+    values:
+      
+      ba_ila_settlements:
+        culture: "Ba-ila people"
+        region: "Zambia"
+        primary_form: "Circular ring settlements"
+        recursion_type: "cellular_nesting"
+        
+        educational_resources:
+          csdt_simulation: "https://csdt.org/culture/baila/index.html"
+          csdt_software: "https://csdt.org/applications/1/run"
+          interactive_parameters:
+            - "ring_count: Number of concentric rings"
+            - "scale_factor: Size ratio between rings"  
+            - "rotation: Angular offset between levels"
+            - "opening_angle: Gap width for passages"
+          lesson_context: >
+            Students recreate settlement layouts by adjusting fractal
+            parameters, learning scaling ratios and geometric transformation
+            while engaging with Zambian architectural heritage.
+        
+        geometry:
+          base_shape: "circle"
+          nesting_pattern: "concentric_rings"
+          scale_ratio: "approximately 1:3 to 1:5"
+          typical_depth: 3-4
+          
+        spatial_logic:
+          outer_ring: "cattle enclosures, public space"
+          middle_rings: "family compounds"
+          inner_ring: "chief's compound, sacred center"
+          scaling_meaning: "social hierarchy encoded in size"
+          
+        visual_parameters:
+          primary_curves: "circular arcs"
+          boundary_treatment: "permeable edges (gaps for passage)"
+          density_gradient: "increases toward center"
+          symmetry: "approximate radial, intentional irregularity"
+          
+        intentionality:
+          cosmological: "Universe as nested spheres of influence"
+          social: "Power and protection radiating from center"
+          practical: "Defense, cattle management, community organization"
+          
+        color_associations:
+          earth_tones: ["ochre", "burnt sienna", "raw umber"]
+          material_reference: "mud brick, thatch, packed earth"
+      
+      dogon_architecture:
+        culture: "Dogon people"
+        region: "Mali (Bandiagara Escarpment)"
+        primary_form: "Rectangular nested compounds"
+        recursion_type: "cellular_nesting"
+        
+        geometry:
+          base_shape: "rectangle"
+          nesting_pattern: "rooms within rooms within village"
+          scale_ratio: "varies by function"
+          typical_depth: 4-5
+          anthropomorphic: true
+          
+        spatial_logic:
+          village_scale: "Body of primordial being (Nommo)"
+          compound_scale: "Individual human body"
+          room_scale: "Body parts (granary as organs)"
+          head_position: "Toguna (men's meeting house)"
+          
+        visual_parameters:
+          primary_lines: "orthogonal grid"
+          boundary_treatment: "solid walls, defined thresholds"
+          verticality: "cliff dwellings emphasize vertical stacking"
+          texture: "stone, banco (mud plaster)"
+          
+        intentionality:
+          cosmological: "Architecture as body of the universe"
+          social: "Gender spaces, initiation sequences"
+          practical: "Cliff defense, grain storage"
+          
+        color_associations:
+          cliff_palette: ["sandstone tan", "shadow grey", "white banco"]
+          sacred_elements: ["indigo", "white kaolin"]
+      
+      fulani_wedding_blankets:
+        culture: "Fulani (Fula) people"
+        region: "West Africa (Mali, Niger, Nigeria, Senegal)"
+        primary_form: "Woven textile patterns"
+        recursion_type: "self_affine"
+        
+        geometry:
+          base_shape: "diamond and triangle motifs"
+          nesting_pattern: "motifs contain smaller versions"
+          scale_ratio: "typically 1:2 or 1:3"
+          typical_depth: 2-3
+          branching_elements: true
+          
+        pattern_types:
+          arkilla_kerka: "white ground, indigo patterns"
+          arkilla_jenngo: "indigo ground, white patterns"
+          khasa: "striped blankets with embedded fractals"
+          
+        visual_parameters:
+          line_quality: "woven = stepped diagonals"
+          color_contrast: "high (indigo/white dominant)"
+          rhythm: "horizontal bands with varying density"
+          edge_treatment: "fringe, bound edges"
+          
+        intentionality:
+          cosmological: "Patterns encode pastoral cosmology"
+          social: "Wealth display, wedding gifts, status markers"
+          practical: "Warmth, bedding, ceremonial wrapping"
+          
+        color_associations:
+          traditional: ["deep indigo", "natural white", "cream"]
+          contemporary: ["added reds", "yellows"]
+      
+      ethiopian_processional_crosses:
+        culture: "Ethiopian Orthodox Christian tradition"
+        region: "Ethiopia"
+        primary_form: "Metalwork crosses"
+        recursion_type: "iterative_elaboration"
+        
+        geometry:
+          base_shape: "cross (Greek or Latin)"
+          elaboration_pattern: "edges spawn smaller crosses/curves"
+          scale_ratio: "varies by regional style"
+          typical_depth: 2-4
+          
+        regional_styles:
+          lalibela: "interlocking lattice, high complexity"
+          gondar: "ornate filigree, flowing curves"
+          axum: "simpler forms, older tradition"
+          
+        visual_parameters:
+          silhouette: "complex outline from simple base"
+          interior_treatment: "lattice, pierced work"
+          symmetry: "bilateral and/or rotational"
+          material_finish: "metallic luster, oxidation patina"
+          
+        intentionality:
+          cosmological: "Infinite elaboration = infinite divine"
+          ritual: "Processional use, blessing gestures"
+          artistic: "Regional identity through style variation"
+          
+        color_associations:
+          metallic: ["brass gold", "silver", "bronze"]
+          patina: ["verdigris", "aged copper"]
+      
+      akan_goldweights:
+        culture: "Akan peoples (Ashanti, Fante, etc.)"
+        region: "Ghana, Côte d'Ivoire"
+        primary_form: "Cast brass weights for gold trade"
+        recursion_type: "self_similar_exact"
+        
+        geometry:
+          base_shapes: ["geometric", "figurative", "symbolic"]
+          self_similarity: "motif repeated at different scales"
+          scale_ratio: "standardized for weight calibration"
+          typical_depth: 1-2 (functional constraint)
+          
+        symbolic_categories:
+          proverb_weights: "encode specific sayings"
+          status_weights: "display rank and achievement"
+          protective_weights: "spiritual defense"
+          
+        visual_parameters:
+          form_language: "dense, compact, tactile"
+          surface_treatment: "cast texture, wear patina"
+          scale_relationship: "weight proportional to size"
+          silhouette: "recognizable at small scale"
+          
+        intentionality:
+          practical: "Standardized trade measurement"
+          social: "Proverb education, status display"
+          spiritual: "Protective talismans"
+          
+        color_associations:
+          metallic: ["brass yellow", "aged bronze", "gold reference"]
+      
+      bamana_divination:
+        culture: "Bamana (Bambara) people"
+        region: "Mali"
+        primary_form: "Sand divination marks"
+        recursion_type: "binary recursion (algorithmic)"
+        
+        geometry:
+          base_element: "single or double marks"
+          generation_rule: "binary tree through random process"
+          grid_structure: "4x4 base, recursive subdivision"
+          typical_depth: "4 generations minimum"
+          
+        mathematical_properties:
+          binary_encoding: "odd/even mark counts"
+          algorithmic_generation: "input randomness, rule-based output"
+          relationship_to_geomancy: "connected to Arabic ilm al-raml"
+          
+        visual_parameters:
+          mark_quality: "gestural, sand-drawn"
+          grid_regularity: "underlying order, surface variation"
+          reading_direction: "specific interpretive sequence"
+          ephemeral_medium: "sand, dust, marks erased"
+          
+        intentionality:
+          cosmological: "Accessing hidden knowledge"
+          practical: "Decision-making, diagnosis"
+          procedural: "Algorithm as divination"
+          
+        color_associations:
+          earth_medium: ["sand tan", "dust grey", "red laterite"]
+      
+      mangbetu_design:
+        culture: "Mangbetu people"
+        region: "Democratic Republic of Congo"
+        primary_form: "Pottery, architecture, body modification"
+        recursion_type: "self_affine"
+        
+        geometry:
+          base_motifs: "triangular, chevron"
+          scaling_behavior: "elongation at larger scales"
+          typical_depth: 2-3
+          body_integration: "head elongation, scarification"
+          
+        visual_parameters:
+          line_quality: "incised, carved, painted"
+          surface_coverage: "dense pattern fields"
+          form_elongation: "vertical stretch aesthetic"
+          material_contexts: ["ceramic", "wood", "skin"]
+          
+        intentionality:
+          aesthetic: "Elongation as beauty ideal"
+          social: "Elite status markers"
+          technical: "Pottery and carving virtuosity"
+          
+        color_associations:
+          pottery: ["terracotta", "burnished black", "natural clay"]
+
+  # ---------------------------------------------------------------------------
+  # SCALE PARAMETERS
+  # How recursion manifests across magnification
+  # ---------------------------------------------------------------------------
+  
+  scale_relationship:
+    description: "Mathematical parameters of scaling between levels"
+    
+    values:
+      scale_ratio:
+        description: "Proportional relationship between parent and child elements"
+        ranges:
+          golden_derived: 
+            ratio: "≈1.618 or its inverse"
+            visual_effect: "Natural, organic growth feeling"
+          binary:
+            ratio: "1:2"
+            visual_effect: "Clear halving, computational feel"
+          ternary:
+            ratio: "1:3"
+            visual_effect: "Stable triangulation"
+          variable:
+            ratio: "changes per level"
+            visual_effect: "Dynamic, accelerating/decelerating"
+            
+      recursion_depth:
+        description: "Number of visible self-similar levels"
+        ranges:
+          shallow:
+            levels: 1-2
+            visual_effect: "Suggestion of recursion, minimal complexity"
+          moderate:
+            levels: 3-4
+            visual_effect: "Clear fractal nature, readable structure"
+          deep:
+            levels: 5+
+            visual_effect: "Dense complexity, texture-like at distance"
+            
+      termination_condition:
+        description: "What determines where recursion stops"
+        values:
+          material_limit: "Physical medium can't support smaller detail"
+          functional_threshold: "Size below which function is lost"
+          aesthetic_choice: "Intentional simplification at small scales"
+          symbolic_completion: "Meaning requires specific depth"
+
+  # ---------------------------------------------------------------------------
+  # SYMMETRY INTERACTION
+  # How fractal recursion relates to symmetry operations
+  # ---------------------------------------------------------------------------
+  
+  symmetry_mode:
+    description: "Relationship between self-similarity and symmetry"
+    
+    values:
+      radial_recursive:
+        description: "Rotational symmetry with recursive subdivision"
+        visual_signature: "Mandala-like, radiating complexity"
+        traditions: ["ethiopian_crosses", "circular_settlements"]
+        
+      bilateral_recursive:
+        description: "Mirror symmetry preserved across scales"
+        visual_signature: "Balanced left-right at each level"
+        traditions: ["fulani_textiles", "akan_goldweights"]
+        
+      translational_recursive:
+        description: "Repeating units, each containing recursion"
+        visual_signature: "Frieze or wallpaper with fractal units"
+        traditions: ["textile_patterns", "architectural_facades"]
+        
+      asymmetric_recursive:
+        description: "Self-similarity without symmetry"
+        visual_signature: "Organic branching, irregular nesting"
+        traditions: ["settlement_growth", "river_planning"]
+        
+      broken_symmetry:
+        description: "Intentional asymmetric elements within symmetric frame"
+        visual_signature: "Imperfection that proves human origin"
+        traditions: ["many traditions incorporate deliberate 'errors'"]
+        intentionality: "Perfection belongs to the divine, not humans"
+
+# =============================================================================
+# MORPHISMS: Transformations that preserve structure
+# =============================================================================
+
+morphisms:
+
+  # ---------------------------------------------------------------------------
+  # INTENT → TRADITION MAPPING
+  # ---------------------------------------------------------------------------
+  
+  intent_to_tradition:
+    description: "Map creative intent to appropriate cultural tradition"
+    
+    mappings:
+      
+      contained_complexity:
+        description: "Complexity bounded within clear structure"
+        primary_traditions: ["ba_ila_settlements", "dogon_architecture"]
+        secondary_traditions: ["akan_goldweights"]
+        recursion_type: "cellular_nesting"
+        visual_result: "Dense detail within legible boundaries"
+        
+      organic_growth:
+        description: "Natural, living expansion patterns"
+        primary_traditions: ["branching patterns", "spiral_settlements"]
+        secondary_traditions: ["fulani_textiles"]
+        recursion_type: "branching"
+        visual_result: "Tree-like, river-like spreading"
+        
+      sacred_elaboration:
+        description: "Spiritual significance through infinite detail"
+        primary_traditions: ["ethiopian_crosses"]
+        secondary_traditions: ["scarification_traditions"]
+        recursion_type: "iterative_elaboration"
+        visual_result: "Simple form made complex through iteration"
+        
+      encoded_knowledge:
+        description: "Information stored in pattern structure"
+        primary_traditions: ["bamana_divination", "akan_goldweights"]
+        secondary_traditions: ["textile_symbols"]
+        recursion_type: "self_similar_exact"
+        visual_result: "Readable symbols with recursive structure"
+        
+      social_hierarchy:
+        description: "Power and status visible in scale"
+        primary_traditions: ["ba_ila_settlements", "dogon_architecture"]
+        secondary_traditions: ["mangbetu_design"]
+        recursion_type: "cellular_nesting"
+        visual_result: "Larger = more important, clear gradation"
+        
+      textile_rhythm:
+        description: "Woven patterns with recursive motifs"
+        primary_traditions: ["fulani_wedding_blankets"]
+        secondary_traditions: ["kente_patterns"]
+        recursion_type: "self_affine"
+        visual_result: "Horizontal bands, embedded complexity"
+
+  # ---------------------------------------------------------------------------
+  # TRADITION → VISUAL PARAMETERS
+  # ---------------------------------------------------------------------------
+  
+  tradition_to_parameters:
+    description: "Extract concrete visual parameters from tradition"
+    
+    parameter_categories:
+      
+      geometry:
+        - base_shape
+        - nesting_pattern
+        - scale_ratio
+        - typical_depth
+        
+      line_quality:
+        - curved_vs_angular
+        - boundary_definition
+        - interior_treatment
+        
+      color:
+        - palette_source
+        - contrast_level
+        - material_reference
+        
+      texture:
+        - surface_treatment
+        - density
+        - material_simulation
+        
+      composition:
+        - symmetry_type
+        - focal_hierarchy
+        - edge_behavior
+
+  # ---------------------------------------------------------------------------
+  # SCALE TRANSFORMATION
+  # ---------------------------------------------------------------------------
+  
+  scale_zoom:
+    description: "Moving between levels of recursion"
+    
+    preservation_requirements:
+      structural: "Parent-child relationships maintained"
+      proportional: "Scale ratios consistent"
+      semantic: "Meaning preserved across scales"
+      
+    transformation_effects:
+      zoom_in:
+        - "Reveals finer detail structure"
+        - "Maintains overall shape language"
+        - "May shift symmetry mode"
+      zoom_out:
+        - "Detail becomes texture"
+        - "Aggregate shape emerges"
+        - "Recursive structure becomes pattern"
+
+# =============================================================================
+# INTENTIONALITY: Why these patterns work
+# =============================================================================
+
+intentionality:
+  
+  core_principle: >
+    African fractal designs encode mathematical knowledge developed for
+    specific purposes - cosmological modeling, social organization, practical
+    computation, and spiritual practice. The visual power comes from this
+    deep intentionality, not arbitrary decoration.
+  
+  cosmological_encoding:
+    description: "Patterns model understanding of universe structure"
+    examples:
+      - tradition: "ba_ila_settlements"
+        encoding: "Nested circles = spheres of influence and protection"
+      - tradition: "dogon_architecture"
+        encoding: "Built environment as body of primordial being"
+      - tradition: "ethiopian_crosses"
+        encoding: "Infinite elaboration = infinite divine nature"
+    visual_implication: >
+      Patterns carry weight of cosmic significance. Visual treatment
+      should suggest depth of meaning, not superficial decoration.
+  
+  social_organization:
+    description: "Spatial patterns encode power, kinship, status"
+    examples:
+      - tradition: "ba_ila_settlements"
+        encoding: "Size indicates social position, center = power"
+      - tradition: "fulani_textiles"
+        encoding: "Pattern complexity indicates skill and wealth"
+      - tradition: "mangbetu_design"
+        encoding: "Elongation marks elite status"
+    visual_implication: >
+      Scale relationships are meaningful. Larger is not just "more"
+      but signifies importance, power, or precedence.
+  
+  practical_computation:
+    description: "Patterns serve as calculating tools or records"
+    examples:
+      - tradition: "akan_goldweights"
+        encoding: "Standardized measures for trade"
+      - tradition: "bamana_divination"
+        encoding: "Algorithmic knowledge generation"
+      - tradition: "owari_game"
+        encoding: "Mathematical reasoning in game form"
+    visual_implication: >
+      Precision is intentional, not accidental. Irregularities may
+      also be intentional - distinguishing human from divine.
+  
+  material_constraints:
+    description: "How medium shapes fractal expression"
+    examples:
+      - medium: "woven textile"
+        constraint: "Diagonal lines = stepped approximations"
+        result: "Characteristic angular interpretation of curves"
+      - medium: "mud architecture"
+        constraint: "Structural limits on wall height/thinness"
+        result: "Recursion depth limited by building physics"
+      - medium: "cast metal"
+        constraint: "Detail limited by casting process"
+        result: "Bold forms, limited fine detail"
+    visual_implication: >
+      Material should inform rendering. Woven fractals look different
+      from carved or built or drawn ones.
+  
+  deliberate_imperfection:
+    description: "Intentional asymmetries and 'errors'"
+    principle: >
+      Many traditions include deliberate breaks in symmetry or pattern.
+      This may encode: humility (only divine is perfect), 
+      authenticity (proves human origin), or functionality
+      (breaks allow spirits to exit, prevent evil eye).
+    visual_implication: >
+      Perfect machine precision may feel inauthentic. Consider
+      whether subtle variation serves the aesthetic.
+
+# =============================================================================
+# COMPOSITION: Combining with other bricks
+# =============================================================================
+
+composition:
+  
+  compatible_domains:
+    
+    origami_aesthetics:
+      connection: "Recursive folding ↔ recursive scaling"
+      mapping:
+        fold_complexity: "recursion_depth"
+        symmetry_type: "symmetry_mode"
+        paper_memory: "material_constraints"
+      composition_strategy: "Origami as medium for fractal expression"
+      
+    jazz_improvisation:
+      connection: "Nested musical scales ↔ nested visual scales"
+      mapping:
+        harmonic_complexity: "recursion_depth"
+        modal_structure: "tradition (as organizing framework)"
+        call_response: "parent_child relationship in nesting"
+      composition_strategy: "Musical recursion informing visual rhythm"
+      
+    genetic_aesthetics:
+      connection: "Biological fractals (lungs, trees) ↔ cultural fractals"
+      mapping:
+        branching_patterns: "branching recursion_type"
+        growth_algorithms: "scale_relationship"
+        organic_texture: "material treatment"
+      composition_strategy: "Nature-culture fractal dialogue"
+      
+    grid_dynamics:
+      connection: "Regular grid vs fractal subdivision"
+      mapping:
+        grid_regularity: "structural framework for recursion"
+        edge_tension: "boundary_treatment"
+        density: "recursion_depth visualization"
+      composition_strategy: "Grid as scaffold for fractal growth"
+      
+    constellation_composition:
+      connection: "Star pattern hierarchies ↔ settlement hierarchies"
+      mapping:
+        brightness_hierarchy: "scale = importance"
+        pattern_recognition: "self-similarity detection"
+        void_space: "negative_space handling"
+      composition_strategy: "Cosmic pattern as cultural pattern"
+
+  conflict_resolution:
+    principle: >
+      African fractal traditions have specific rules. When composing
+      with other domains, the cultural specificity should be preserved.
+      Generic "fractal enhancement" should be avoided.
+    
+    strategy:
+      - "Choose ONE tradition as primary, do not mix cultural elements"
+      - "Other domain provides parameters within tradition's constraints"
+      - "Material rendering should match tradition's actual media"
+      - "Always attribute specific cultural source"
+
+# =============================================================================
+# VISUAL OUTPUT GUIDANCE
+# =============================================================================
+
+visual_output:
+  
+  prompt_construction:
+    required_elements:
+      - "Specific tradition name (not generic 'African fractal')"
+      - "Recursion type and approximate depth"
+      - "Material/medium reference"
+      - "Scale relationship indication"
+      
+    recommended_elements:
+      - "Symmetry mode"
+      - "Color palette from tradition"
+      - "Intentionality hint (why this pattern exists)"
+      
+    avoid:
+      - "Generic 'tribal' or 'ethnic' descriptors"
+      - "Mixing elements from different traditions"
+      - "Implying primitiveness or accident"
+      - "Machine-perfect regularity (usually)"
+  
+  quality_indicators:
+    authentic:
+      - "Recursion follows tradition's actual rules"
+      - "Material rendering appropriate to tradition"
+      - "Scale relationships meaningful"
+      - "Deliberate (not arbitrary) imperfection"
+      
+    problematic:
+      - "Random fractal generation labeled as African"
+      - "Mixed elements from incompatible traditions"
+      - "Over-regularized, computer-perfect execution"
+      - "Generic 'primitive' or 'tribal' framing"
+
+# =============================================================================
+# EXAMPLE COMPOSITIONS
+# =============================================================================
+
+examples:
+  
+  - name: "Ba-ila Settlement Study"
+    tradition: "ba_ila_settlements"
+    intent: "contained_complexity"
+    parameters:
+      recursion_type: "cellular_nesting"
+      recursion_depth: 4
+      symmetry_mode: "radial_recursive"
+      scale_ratio: "1:4"
+      color_palette: "earth_tones"
+      material: "aerial view of mud structures"
+    prompt_sketch: >
+      Aerial view of Ba-ila ring settlement, Zambia. Concentric circular
+      compounds of mud-brick with thatched roofs. Largest ring at center
+      (chief's compound), progressively smaller family compounds radiating
+      outward. Four levels of nesting visible. Cattle enclosures in outer
+      ring. Ochre and sienna earth tones, shadows suggesting late afternoon.
+      Irregular gaps in rings for pathways. Human scale visible in smallest
+      structures.
+      
+  - name: "Ethiopian Cross Elaboration"
+    tradition: "ethiopian_processional_crosses"
+    intent: "sacred_elaboration"
+    parameters:
+      recursion_type: "iterative_elaboration"
+      recursion_depth: 3
+      symmetry_mode: "bilateral_recursive"
+      regional_style: "lalibela"
+      color_palette: "metallic brass"
+      material: "cast brass with patina"
+    prompt_sketch: >
+      Lalibela-style Ethiopian processional cross in cast brass. Simple
+      cross base, edges elaborated with smaller crosses and interlocking
+      lattice. Three levels of edge iteration visible. Bilateral symmetry
+      with subtle hand-forged irregularity. Warm brass tone with verdigris
+      patina in recesses. Strong silhouette against neutral ground. Light
+      catching pierced interior lattice work.
+      
+  - name: "Fulani Wedding Blanket"
+    tradition: "fulani_wedding_blankets"
+    intent: "textile_rhythm"
+    parameters:
+      recursion_type: "self_affine"
+      recursion_depth: 2
+      symmetry_mode: "bilateral_recursive"
+      pattern_type: "arkilla_kerka"
+      color_palette: "indigo and white"
+      material: "woven cotton"
+    prompt_sketch: >
+      Fulani arkilla kerka wedding blanket. White cotton ground with
+      deep indigo woven patterns. Horizontal bands of varying width.
+      Diamond and triangle motifs containing smaller versions of themselves.
+      Two levels of recursion visible in main pattern field. Stepped
+      diagonals from woven construction. Fringe at short edges. Subtle
+      texture variation from handspun thread. High contrast indigo/white.
